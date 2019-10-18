@@ -1,7 +1,7 @@
 <import src="my-article-template/my-article-template.wxml" />
 <swiper indicator-dots="true" autoplay="true">
     <swiper-item wx:for="{{bannerList}}">
-        <image src="{{item}}"></image>
+        <image class="img" src="{{item}}" mode='aspectFill'></image>
     </swiper-item>
 </swiper>
 <scroll-view>
