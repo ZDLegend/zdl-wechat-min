@@ -1,0 +1,13 @@
+<import src="my-article-template/my-article-template.wxml" />
+<swiper indicator-dots="true" autoplay="true">
+    <swiper-item wx:for="{{bannerList}}">
+        <image src="{{item}}"></image>
+    </swiper-item>
+</swiper>
+<scroll-view>
+    <block wx:for="{{articleList}}" wx:for-item="item" wx:for-index="index">
+        <view catchtap="details" data-aid="{{item.id}}">
+            <template is="myArticleTemplate" data="{{...item}}"></template>
+        </view>
+    </block>
+</scroll-view>

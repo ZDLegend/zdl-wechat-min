@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/images/images",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c2e3b",
+    "navigationBarTitleText": "暗浩的小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#87ceeb",
+    "borderStyle": "black",
+    "backgroundColor": "#2c2e3b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tab/ciwei.png",
+        "selectedIconPath": "image/tab/ciwei_hl.png"
+      },
+      {
+        "pagePath": "pages/images/images",
+        "text": "图片",
+        "iconPath": "image/tab/yuedu.png",
+        "selectedIconPath": "image/tab/yuedu_hl.png"
+      }
+    ]
+  }
+}
