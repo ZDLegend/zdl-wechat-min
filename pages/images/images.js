@@ -50,7 +50,7 @@ Page({
   details(e) {
     let aid = e.currentTarget.dataset.aid;
     wx.navigateTo({
-      url: "../talk-details/talk-details?aid=" + aid
+      url: "../image-details/image-details?aid=" + aid
     })
   }
 });

@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 400rpx;
+}
+.music{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+.authorData{
+    margin: 20rpx 0 0 20rpx;
+    flex-direction: row;
+}
+.avatar{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.nickname{
+    font-size: 30rpx;
+    font-weight: 300;
+    margin-left: 20rpx;
+    vertical-align: -4rpx;
+    color: #666;
+}
+.constText{
+    font-size: 24rpx;
+    font-weight: 300;
+    margin-left: 20rpx;
+    vertical-align: -4rpx;
+    color: #999;
+}
+.releaseData{
+    font-size: 24rpx;
+    font-weight: 300;
+    margin-left: 10rpx;
+    vertical-align: -4rpx;
+    color: #999;
+}
+.title{
+    margin-left: 20rpx;
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-top: 30rpx;
+    letter-spacing: 2px;
+    color: #4b556c;
+}
+.option{
+    margin-top: 20rpx;
+}
+.icon{
+    float: right;
+    margin-right: 40rpx;
+    vertical-align: middle;
+}
+.collection{
+    width: 60rpx;
+    height: 60rpx;
+    border: 6rpx solid #e5e5e5;
+    border-radius: 50%;
+}
+.share{
+    width: 60rpx;
+    height: 60rpx;
+    border: 6rpx solid #e5e5e5;
+    border-radius: 50%;
+    margin-left: 30rpx;
+}
+.hr{
+    position: relative;
+    top: 36rpx;
+    left: 2%;
+    width: 96%;
+    height: 1rpx;
+    background: #e5e5e5;
+    z-index: -1;
+}
+.content{
+    width: 96%;
+    margin: 30rpx 2%;
+    font-size: 26rpx;
+    text-indent: 60rpx;
+}

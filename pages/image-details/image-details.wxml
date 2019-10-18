@@ -1,0 +1,21 @@
+<view class="container">
+    <image class="banner" src="{{articles.thumbnail}}" alt="slt">
+        <image catchtap="onMusic" class="music" src="{{isPlaying ? '../../images/icon/music-stop.png' : '../../images/icon/music-start.png'}}"></image>
+    </image>
+    <view class="authorData">
+        <image class="avatar" src="{{articles.avatar}}"></image>
+        <text class="nickname">{{articles.name}}</text>
+        <text class="constText">发表于</text>
+        <text class="releaseData">{{articles.date}}</text>
+    </view>
+    <text class="title">{{articles.title}}</text>
+    <view class="option">
+        <view class="icon">
+            <image wx:if="{{col}}" class="collection" bindtap="collect" data-id="{{articles.id}}" src="../../images/icon/collection.png"></image>
+            <image wx:else class="collection" bindtap="collect" data-id="{{articles.id}}" src="../../images/icon/collection-anti.png"></image>
+            <image class="share" bindtap='share' src="../../images/icon/share.png"></image>
+        </view>
+        <view class="hr"></view>
+    </view>
+    <text class="content">{{articles.content}}</text>
+</view>

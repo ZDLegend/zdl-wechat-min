@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/images/images",
+    "pages/image-details/image-details",
     "pages/logs/logs"
   ],
   "window": {
