@@ -17,5 +17,17 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 450px;
+  color: #2c2e3b
+}
+
+page{
+  height:100%;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
 }
