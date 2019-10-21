@@ -49,7 +49,6 @@
 }
 .thumbnail{
     width: 100%;
-    height: 300rpx;
 }
 .introduce{
     padding: 0 10rpx;
