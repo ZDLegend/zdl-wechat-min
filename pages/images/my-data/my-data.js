@@ -1,10 +1,10 @@
 let tolkData = {
   bannerList: [
-    "/image/banner/banner01.jpg",
-    "/image/banner/banner02.jpg",
-    "/image/banner/banner03.jpg",
-    "/image/banner/banner04.jpg",
-    "/image/banner/banner05.jpg"
+    "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/banner/banner01.jpg?sign=93957075b61fba0b5219aa2a7c4dc1df&t=1571413036",
+    "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/banner/banner02.jpg?sign=7029990ca155a21e47934f49b602789f&t=1571413147",
+    "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/banner/banner03.jpg?sign=7029990ca155a21e47934f49b602789f&t=1571413147",
+    "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/banner/banner04.jpg?sign=7029990ca155a21e47934f49b602789f&t=1571413147",
+    "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/banner/banner05.jpg?sign=7029990ca155a21e47934f49b602789f&t=1571413147"
   ],
   articleList: [{
       id: 1,
@@ -32,7 +32,7 @@ let tolkData = {
       title: "神偷奶爸3",
       avatar: "/image/avatar/avatar-05.jpg",
       name: "笑如歌",
-      thumbnail: "/images/thumbnail/thumbnail05.jpg",
+      thumbnail: "/image/thumbnail/thumbnail05.jpg",
       content: "《神偷奶爸3》（Despicable Me 3）是由环球影业及照明娱乐公司联合制作，" +
       "凯尔·巴尔达、皮艾尔·柯芬、埃里克·吉隆联合执导，史蒂夫·卡瑞尔、克里斯汀·韦格、崔·帕克" +
       "等主要配音的3D动画电影。",
@@ -51,7 +51,7 @@ let tolkData = {
       title: "如何摄影",
       avatar: "/image/avatar/avatar-01.jpg",
       name: "倾国倾城倾人心",
-      thumbnail: "/images/thumbnail/thumbnail01.jpg",
+      thumbnail: "/image/thumbnail/thumbnail01.jpg",
       content: "运用摄影机、镜头、胶片把客观事物及其运动记录下来的过程。" +
       "电影摄影基于视觉暂留原理，通过摄影机内部的间歇机构将连续的运动分解为" +
       "一系列静止画面，再通过放映机的运转将这一系列静止影像连续呈现出来，从" +
@@ -71,7 +71,7 @@ let tolkData = {
       title: "开国大典",
       avatar: "/image/avatar/avatar-02.jpg",
       name: "安静苦笑",
-      thumbnail: "/images/thumbnail/thumbnail02.jpg",
+      thumbnail: "/image/thumbnail/thumbnail02.jpg",
       content: "开国大典，是指1949年10月1日15：00在北京为中华人民共和国中央" +
       "人民政府成立而举行的仪式，直到21：00才结束，是中华人民共和国成立的标志。",
       views: 173,

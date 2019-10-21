@@ -5,7 +5,7 @@
             <text class="nickname">{{name}}</text>
             <i class="iconfont icon-v{{level}} level"></i>
         </view>
-        <image class="thumbnail" src="{{thumbnail}}"></image>
+        <image class="thumbnail" src="{{thumbnail}}" mode="aspectFit"></image>
         <text class="introduce">{{content}}</text>
         <view class="operate">
             <i class="iconfont icon-liulan operate-icon"></i>

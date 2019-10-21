@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="content">
-  <image class='background' src="../../image/background.jpg" mode="aspectFill"></image>
+  <image class='background' src="https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/background.jpg?sign=05e01f748c42e6ef575cdf3306af086d&t=1571410267" mode="aspectFill"></image>
   <view class="container">
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
