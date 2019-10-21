@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/images/images",
+    "pages/slide/slide",
     "pages/image-details/image-details",
     "pages/logs/logs"
   ],
