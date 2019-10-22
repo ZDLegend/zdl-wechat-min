@@ -1,5 +1,5 @@
 <view class="container">
-    <image class="banner" src="{{articles.thumbnail}}" alt="slt">
+    <image class="banner" src="{{articles.thumbnail}}" alt="slt" mode="aspectFit">
         <image catchtap="onMusic" class="music" src="{{isPlaying ? '../../images/icon/music-stop.png' : '../../images/icon/music-start.png'}}"></image>
     </image>
     <view class="authorData">
