@@ -27,7 +27,7 @@
       },
       {
         "pagePath": "pages/images/images",
-        "text": "图片",
+        "text": "圈子",
         "iconPath": "image/tab/yuedu.png",
         "selectedIconPath": "image/tab/yuedu_hl.png"
       }
