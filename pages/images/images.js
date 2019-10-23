@@ -2,14 +2,13 @@ let tolkData = require("my-data/my-data");
 Page({
   data: {},
   onLoad(options) {
-    // 模拟获取后台数据
     this.setData(tolkData);
   },
   onShareAppMessage() {
     let that = this;
     let shareObj = {
-      title: "影视大爆炸社区爆文",
-      path: '/pages/talk/talk',
+      title: "你出现在我诗的每一页",
+      path: '/pages/index/index',
       success(res) {
         // 转发成功之后的回调
       },
