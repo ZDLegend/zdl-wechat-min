@@ -85,7 +85,7 @@ Page({
         ]
         wx.showModal({
             title: toast[res.tapIndex],
-            content: '咱们今天讲的是交互反馈，这个很常用！',
+            content: '你分享了也没用，哈哈哈哈！',
             showCancel: true,
             success(res){
                 if(res.confirm){
