@@ -19,9 +19,9 @@ let tolkData = {
       date: "2015/12/17 22:28:38",
       canLike: true,
       music: {
-          dataUrl: "http://up.mcyt.net/?down/37626.mp3",
-          title: "刚好遇见你-冯提莫",
-          coverImgUrl: "https://tvax2.sinaimg.cn/crop.0.0.1125.1125.180/63ae8f44ly8fr1iybrbowj20v90v9q4o.jpg"
+        dataUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E6%99%B4%E5%A4%A9.mp3?sign=742f4c82ea80cab7242f48cb128e1865&t=1571894588",
+          title: "晴天-周杰伦",
+        coverImgUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/%E5%91%A8%E6%9D%B0%E4%BC%A6.jpg?sign=43dae83e0b93b579aeb24963194355c6&t=1571894478"
       }
     }, {
       id: 2,
@@ -36,9 +36,9 @@ let tolkData = {
       date: "2016/12/17 22:28:388",
       canLike: true,
       music: {
-          dataUrl: "http://up.mcyt.net/?down/46645.mp3",
-          title: "锦瑟长思-银临",
-          coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/20.jpg"
+        dataUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E6%98%9F%E6%99%B4.mp3?sign=02551c22afb25c39ca6e05bdcd07b75c&t=1571894636",
+          title: "星晴-周杰伦",
+        coverImgUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/%E5%91%A8%E6%9D%B0%E4%BC%A6.jpg?sign=43dae83e0b93b579aeb24963194355c6&t=1571894478"
       }
     }, {
       id: 3,
@@ -53,9 +53,9 @@ let tolkData = {
       date: "2017/12/17 22:28:38",
       canLike: true,
       music: {
-          dataUrl: "http://up.mcyt.net/?down/46635.mp3",
-          title: "一介书生-艾辰",
-          coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/82.jpg"
+        dataUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%AE%80%E5%8D%95%E7%88%B1.mp3?sign=29e600314fb2c05f4648bb1983bc75f1&t=1571894659",
+          title: "简单爱-周杰伦",
+        coverImgUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/%E5%91%A8%E6%9D%B0%E4%BC%A6.jpg?sign=43dae83e0b93b579aeb24963194355c6&t=1571894478"
       }
     }, {
       id: 4,
@@ -70,9 +70,9 @@ let tolkData = {
       date: "2018/12/17 22:28:38",
       canLike: true,
       music: {
-          dataUrl: "http://up.mcyt.net/?down/46634.mp3",
-          title: "雨季-曾沛慈",
-          coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/95.jpg"
+        dataUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E7%94%9C%E7%94%9C%E7%9A%84.mp3?sign=8f47f25aeef41e9a8b240c6343d938ef&t=1571894687",
+          title: "甜甜的-周杰伦",
+        coverImgUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/%E5%91%A8%E6%9D%B0%E4%BC%A6.jpg?sign=43dae83e0b93b579aeb24963194355c6&t=1571894478"
       }
     }, {
       id: 5,
@@ -87,9 +87,9 @@ let tolkData = {
       date: "2019/12/17 22:28:38",
       canLike: true,
       music: {
-          dataUrl: "http://up.mcyt.net/?down/46631.mp3",
-          title: "九张机-锦零",
-          coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/66.jpg"
+        dataUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E4%B8%83%E9%87%8C%E9%A6%99.mp3?sign=4968c045ab51fdc11ca780eae125cf8d&t=1571893006",
+          title: "七里香-周杰伦",
+        coverImgUrl: "https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/%E5%91%A8%E6%9D%B0%E4%BC%A6.jpg?sign=43dae83e0b93b579aeb24963194355c6&t=1571894478"
       }
     }
   ]
