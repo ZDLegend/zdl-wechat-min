@@ -12,6 +12,10 @@
     "navigationBarTitleText": "黯爽夫妇",
     "navigationBarTextStyle": "white"
   },
+  "requiredBackgroundModes": [
+    "audio",
+    "backgroundAudioManager"
+  ],
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#fff",
