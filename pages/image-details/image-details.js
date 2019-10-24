@@ -90,7 +90,7 @@ Page({
             success(res){
                 if(res.confirm){
                     wx.showToast({
-                        title: "分享成功！",
+                        title: "不给分享，逗你玩的！",
                         icon: "none"
                     })
                 }else if(res.cancel){
