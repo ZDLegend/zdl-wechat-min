@@ -16,6 +16,7 @@
     "audio",
     "backgroundAudioManager"
   ],
+  "cloud": true,
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#fff",

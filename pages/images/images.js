@@ -1,8 +1,14 @@
-let tolkData = require("my-data/my-data");
+let imageData = {}
+wx.cloud.database().collection('image_info').get({
+  success: function (res) {
+    imageData = res.data[0]
+    console.log(imageData)
+  }
+})
 Page({
   data: {},
   onLoad(options) {
-    this.setData(tolkData);
+    this.setData(imageData);
   },
   onShareAppMessage() {
     let that = this;
@@ -31,6 +37,7 @@ Page({
       this,
       --e.target.dataset.id
     ];
+    console.log(that.data)
     let status = that.data.articleList[index].canLike;
     if (status) {
       let likeCount = that.data.articleList[index].likes;
