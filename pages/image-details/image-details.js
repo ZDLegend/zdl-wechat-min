@@ -1,4 +1,9 @@
-let details = require("../images/my-data/my-data");
+let details = {}
+wx.cloud.database().collection('image_info').get({
+  success: function (res) {
+    details = res.data[0]
+  }
+})
 let app = getApp();
 Page({
   data: {
