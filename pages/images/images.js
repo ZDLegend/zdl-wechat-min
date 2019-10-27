@@ -2,7 +2,6 @@ let imageData = {}
 wx.cloud.database().collection('image_info').get({
   success: function (res) {
     imageData = res.data[0]
-    console.log(imageData)
   }
 })
 Page({
