@@ -1,18 +1,17 @@
-let imageData = {}
+let imageData = {};
 wx.cloud.database().collection('image_info').get({
   success: function (res) {
-    imageData = res.data[0]
+    imageData = res.data[0];
     console.log(imageData)
   }
-})
+});
 Page({
   data: {},
   onLoad(options) {
     this.setData(imageData);
   },
   onShareAppMessage() {
-    let that = this;
-    let shareObj = {
+    return {
       title: "你出现在我诗的每一页",
       path: '/pages/index/index',
       success(res) {
@@ -29,8 +28,7 @@ Page({
       complete() {
         // 转发结束之后的回调（转发成不成功都会执行）
       }
-    };
-    return shareObj;
+    }
   },
   likeThis(e) {
     let [that, index] = [
