@@ -23,9 +23,9 @@ Page({
       },
       fail(res) {
         // 转发失败之后的回调
-        if (res.errMsg == 'shareAppMessage:fail cancel') {
+        if (res.errMsg === 'shareAppMessage:fail cancel') {
           // 用户取消转发
-        } else if (res.errMsg == 'shareAppMessage:fail') {
+        } else if (res.errMsg === 'shareAppMessage:fail') {
           // 转发失败，其中  为详细失败信息
         }
       },
