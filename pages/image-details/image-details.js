@@ -100,7 +100,7 @@ Page({
                             })
                         } else if (res.cancel) {
                             wx.showToast({
-                                title: "取消分享！",
+                                title: "小屁孩，为什么取消了！",
                                 icon: "none"
                             })
                         } else {

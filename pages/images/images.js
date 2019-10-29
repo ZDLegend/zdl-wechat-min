@@ -19,14 +19,23 @@ Page({
       title: "你出现在我诗的每一页",
       path: '/pages/index/index',
       success(res) {
-        // 转发成功之后的回调
+        wx.showToast({
+          title: "转发成功啦~",
+          icon: "none"
+        })
       },
       fail(res) {
         // 转发失败之后的回调
         if (res.errMsg === 'shareAppMessage:fail cancel') {
-          // 用户取消转发
+          wx.showToast({
+            title: "小屁孩，为什么取消了",
+            icon: "none"
+          })
         } else if (res.errMsg === 'shareAppMessage:fail') {
-          // 转发失败，其中  为详细失败信息
+          wx.showToast({
+            title: "哎呀，失败了",
+            icon: "none"
+          })
         }
       },
       complete() {
