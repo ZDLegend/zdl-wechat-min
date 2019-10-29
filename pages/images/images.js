@@ -1,13 +1,18 @@
-let imageData = {};
-wx.cloud.database().collection('image_info').get({
-  success: function (res) {
-    imageData = res.data[0]
-  }
-});
+const util = require('../../utils/util.js')
 Page({
   data: {},
   onLoad(options) {
-    this.setData(imageData);
+    let that = this;
+    util.getImageData(that.precessImageData)
+  },
+  precessImageData(res) {
+    let imageData = res.data[0]
+    this.setData({
+      ["articleList"]: imageData.articleList
+    });
+    this.setData({
+      ["bannerList"]: imageData.bannerList
+    });
   },
   onShareAppMessage() {
     return {
