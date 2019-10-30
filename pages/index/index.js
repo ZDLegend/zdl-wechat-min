@@ -1,18 +1,27 @@
 //index.js
-//获取应用实例
+const musicUtil = require('../../utils/music-util.js')
 const app = getApp()
-
 Page({
   data: {
     motto: 'welcome to my board',
     userInfo: {},
     hasUserInfo: false,
+    music:'https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E5%8F%AFai%E5%A5%B3%E4%BA%BA.mp3?sign=578811e1b0a5e72fa772e220451f7631&t=1572402672',
+    musicClass:'music-on',
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
+  //音乐启停函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    musicUtil.switchByData(this.musicOn, this.musicStop)
+  },
+  musicOn: function () {
+    this.setData({
+      musicClass: 'music-on'
+    })
+  },
+  musicStop: function () {
+    this.setData({
+      musicClass: ''
     })
   },
   onLoad: function () {
@@ -42,6 +51,7 @@ Page({
         }
       })
     }
+    musicUtil.initMusic(this.data.music)
   },
   getUserInfo: function(e) {
     console.log(e)

@@ -2,7 +2,8 @@ const data = {
     icon: 'https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/jay_head.jpg?sign=50745acce385cf237332a89501ec4706&t=1572416787',
     audioStatus: 1,
     audioCtx: '',
-    musicClass: 'music-on'
+    musicClass: 'music-on',
+    src: ''
 };
 
 const initMusic = src => {
@@ -12,29 +13,53 @@ const initMusic = src => {
     }
 
     if (src) {
+        data.src = src
         let audioCtx = wx.createInnerAudioContext()
         data.audioCtx = audioCtx
-        if (data.audioStatus === '1') {
-            audioCtx.autoplay = true
-        }
+        audioCtx.autoplay = true
         audioCtx.loop = true;
         audioCtx.src = src
         audioCtx.play()
     }
-}
+};
 
 const _switch = () => {
     // 如果是播放就停止
     if (data.audioStatus) {
         data.audioStatus = 0;
-        data.musicClass = '';
-        data.audioCtx.pause()
-        // 如果是停止就播放
-    } else {
-        data.audioStatus = 1;
-        data.musicClass = 'music-on';
-        data.audioCtx.play()
+        data.audioCtx.pause();
     }
+    // 如果是停止就播放
+    else {
+        data.audioStatus = 1;
+        data.audioCtx.play();
+    }
+};
+
+const switchByData = (musicOn, musicStop) => {
+    // 如果是播放就停止
+    if (data.audioStatus) {
+        data.audioStatus = 0;
+        data.audioCtx.pause();
+        musicStop();
+
+    }
+    // 如果是停止就播放
+    else {
+        data.audioStatus = 1;
+        data.audioCtx.play();
+        musicOn();
+    }
+};
+
+//查看当前播放是否同一个音乐
+const isConcurrent = src => {
+    return data.src === src
+}
+
+//查看当前播放状态
+const isPlay = () => {
+    return data.audioStatus
 }
 
 // 写在组件的methods中：
@@ -60,8 +85,11 @@ const onHide = function () {
 module.exports = {
     initMusic: initMusic,
     _switch: _switch,
+    switchByData : switchByData,
     onShow : onShow,
-    onHide : onHide
+    onHide : onHide,
+    isConcurrent : isConcurrent,
+    isPlay : isPlay
 }
 
 
