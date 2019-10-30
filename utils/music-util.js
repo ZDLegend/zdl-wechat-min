@@ -67,7 +67,7 @@ const isPlay = () => {
 // 在引用组件页面的onShow()中调用
 // 否则，如果当发生分享页面行为并返回时，音乐不会自动播放
 const onShow = function () {
-    if (data.music && data.audioStatus) {
+    if (data.audioStatus) {
         data.audioCtx.play()
     }
 };
@@ -75,7 +75,7 @@ const onShow = function () {
 // 在引用组件页面的onHide()中调用
 // 使在跳转到下一个页面后，音乐停止
 const onHide = function () {
-    if (data.music && this.data.audioStatus) {
+    if (data.audioStatus) {
         data.audioCtx.pause()
     }
 

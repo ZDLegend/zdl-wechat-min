@@ -53,6 +53,12 @@ Page({
     }
     musicUtil.initMusic(this.data.music)
   },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    musicUtil.onShow()
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
