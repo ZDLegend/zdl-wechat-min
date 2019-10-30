@@ -1,11 +1,11 @@
 <!--index.wxml-->
-<view class="content">
+<view class="content" xmlns:wx="http://www.w3.org/1999/xhtml">
   <image class='background' src="https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/background.jpeg?sign=05e01f748c42e6ef575cdf3306af086d&t=1571410267" mode="aspectFill"></image>
   <view class="container">
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
       <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <image bindtap="bindViewTap" class="userinfo-avatar {{musicClass}}" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         </block>
     </view>
   </view>

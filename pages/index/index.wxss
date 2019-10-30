@@ -31,3 +31,25 @@ page{
   background-size:100% 100%;
   z-index: -1;
 }
+
+.music {
+  position: absolute;
+  z-index: 99;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* 旋转class */
+.music-on {
+  animation: music-rotate 15s linear infinite;
+}
+
+/* 旋转动画 */
+@keyframes music-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
