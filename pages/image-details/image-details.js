@@ -1,3 +1,4 @@
+const musicUtil = require('../../utils/music-util.js')
 let details = {}
 wx.cloud.database().collection('image_info').get({
     success: function (res) {
@@ -23,32 +24,12 @@ Page({
         this.setData({
             col: wx.getStorageSync(`colList[${aid}]`)
         })
-        // 检验播放的文章ID是否一致，避免点击其余文章，也出现正在播放状态
-        if (app.globalData.MUSICID === that.data.articles.id) {
-            that.setData({
-                isPlaying: app.globalData.ISPLAYING
-            })
-        }
-        // 监听音乐启动
-        wx.onBackgroundAudioPlay(function () {
+        // 检验播放器播放的是否为当前歌曲，避免点击其余文章，也出现正在播放状态
+      if (musicUtil.isConcurrent(that.data.articles.music.dataUrl)) {
             that.setData({
                 isPlaying: true
             })
-        })
-        // 监听音乐暂停
-        wx.onBackgroundAudioPause(function () {
-            that.setData({
-                isPlaying: false
-            })
-        })
-        // 监听音乐停止，图标初始化
-        wx.onBackgroundAudioStop(function () {
-            that.setData({
-                isPlaying: false
-            })
-            app.globalData.ISPLAYING = false;
-            app.globalData.MUSICID = null;
-        })
+        }
     },
     collect(event) {
         let id = event.currentTarget.dataset.id;
@@ -119,21 +100,22 @@ Page({
     },
     onMusic(event) {
         let that = this;
-        let isPlaying = this.data.isPlaying;
-        if (!isPlaying) {
-            that.setData({
-                isPlaying: true
-            })
-            app.globalData.ISPLAYING = true;
-            app.globalData.MUSICID = that.data.articles.id;
-            wx.playBackgroundAudio(that.data.articles.music)
+        //如果是当前歌曲，则直接调用开关接口。如果不是，则刷新播放器
+        if (musicUtil.isConcurrent(that.data.articles.music.dataUrl)) {
+            musicUtil.switchByData(this.musicOn, this.musicStop)
         } else {
-
-            that.setData({
-                isPlaying: false
-            })
-            app.globalData.ISPLAYING = false;
-            wx.pauseBackgroundAudio();
+            musicUtil.initMusic(that.data.articles.music.dataUrl)
+            this.musicOn()
         }
+    },
+    musicOn: function () {
+        this.setData({
+            isPlaying: true
+        })
+    },
+    musicStop: function () {
+        this.setData({
+            isPlaying: false
+        })
     }
 });
