@@ -1,8 +1,6 @@
 const data = {
-    icon: 'https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/images/jay/jay_head.jpg?sign=50745acce385cf237332a89501ec4706&t=1572416787',
     audioStatus: 1,
     audioCtx: '',
-    musicClass: 'music-on',
     src: ''
 };
 
