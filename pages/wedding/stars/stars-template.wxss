@@ -1,0 +1,23 @@
+.stars-container{
+    width: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    height: 17rpx;
+    margin-right: 24rpx;
+    margin-top: 12rpx;
+}
+.stars image{
+    padding-left: 3rpx;
+    height: 20rpx;
+    width: 20rpx;
+}
+.star-score{
+    color: #1f3463;
+    font-size: 26rpx;
+    margin-top: 8rpx;
+}

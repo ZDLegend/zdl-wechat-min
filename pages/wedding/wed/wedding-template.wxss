@@ -1,0 +1,19 @@
+@import "../stars/stars-template.wxss";
+.wedding-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 22rpx;
+}
+.wedding-img{
+    width: 200rpx;
+    height: 270rpx;
+    padding-bottom: 20rpx;
+}
+.wedding-title{
+    width: 200rpx;
+    margin-bottom: 16rpx;
+    font-size: 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

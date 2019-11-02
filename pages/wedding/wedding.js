@@ -1,17 +1,33 @@
-// pages/slide/slide.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    containerShow: true,
+    closeImgShow: false,
+    showOrHide: "hidden"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getData(1, "tianshui", "9月28日 甘肃天水");
+    this.getData(2, "jiaxing", "10月4日 浙江嘉兴");
+    this.getData(3, "wedding", "婚纱照");
+  },
+  /**
+   * 获取数据
+   * @param type
+   * @param setKey
+   * @param slogans
+   */
+  getData: function(type, setKey, slogans) {
+
+  },
+  onMoreTap: function(e) {
 
   },
 

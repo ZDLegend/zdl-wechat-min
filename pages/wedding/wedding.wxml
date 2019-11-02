@@ -1,0 +1,15 @@
+<!--pages/slide/wedding.wxml-->
+<import src="wedding-list/wedding-list-template.wxml" />
+<view style='visibility: {{showOrHide}}'>
+    <view class="container" wx-if="{{containerShow}}">
+        <view class="wedding-template">
+            <template is="weddingListTemplate" data="{{...tianshui}}" />
+        </view>
+        <view class="wedding-template">
+            <template is="weddingListTemplate" data="{{...jiaxing}}" />
+        </view>
+        <view class="wedding-template">
+            <template is="weddingListTemplate" data="{{...wedding}}" />
+        </view>
+    </view>
+</view>

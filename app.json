@@ -2,8 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/images/images",
-    "pages/slide/slide",
     "pages/image-details/image-details",
+    "pages/wedding/wedding",
     "pages/logs/logs"
   ],
   "window": {
@@ -26,15 +26,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "image/tab/ciwei.png",
-        "selectedIconPath": "image/tab/ciwei_hl.png"
+        "text": "",
+        "iconPath": "image/tab/type.png",
+        "selectedIconPath": "image/tab/type-active.png"
       },
       {
         "pagePath": "pages/images/images",
-        "text": "圈子",
+        "text": "",
         "iconPath": "image/tab/yuedu.png",
         "selectedIconPath": "image/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/wedding/wedding",
+        "text": "",
+        "iconPath": "image/tab/ciwei.png",
+        "selectedIconPath": "image/tab/ciwei_hl.png"
       }
     ]
   }

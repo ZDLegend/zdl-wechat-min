@@ -1,0 +1,31 @@
+@import "wedding-list/wedding-list-template.wxss";
+.container{
+    background: #f2f2f2;
+}
+.wedding-template{
+    margin-bottom: 30rpx;
+}
+.search{
+    background: #f2f2f2;
+    height: 80rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.search input{
+    height: 100%;
+    width: 600rpx;
+    margin-left: 20rpx;
+    font-size: 32rpx;
+}
+.search-img,
+.clear-img{
+    margin: auto 0 auto 20rpx;
+}
+.placeholader{
+    color: #d1d1d1;
+}
+.search-panel{
+    position: absolute;
+    top: 80rpx;
+}

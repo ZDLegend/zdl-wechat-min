@@ -1,0 +1,19 @@
+<import src="../wed/wedding-template.wxml" />
+<template name="weddingListTemplate">
+    <view class="wedding-list-container">
+        <div class="inner-container">
+                <view class="wedding-head">
+                <text class="slogan">{{slogan}}</text>
+                <view class="more" catchtap='onMoreTap' data-categroy="{{slogan}}">
+                    <text class="more-text">更多</text>
+                    <image class="more-img" src="/image/icon/arrow-right.png"></image>
+                </view>
+            </view>    
+            <view class="weddings-container">
+                <block wx:for="{{weddings}}" wx:for-item="wedding">
+                    <template is="weddingTemplate" data="{{...wedding}}" />
+                </block>
+            </view>
+        </div>
+    </view>
+</template>
