@@ -1,5 +1,13 @@
-function getImageData(callBack) {
+function getImageInfo(callBack) {
   wx.cloud.database().collection('image_info').get({
+    success: function (res) {
+      callBack(res)
+    }
+  })
+}
+
+function getImageData(callBack) {
+  wx.cloud.database().collection('image_data').get({
     success: function (res) {
       callBack(res)
     }
@@ -24,5 +32,6 @@ const formatNumber = n => {
 
 module.exports = {
   formatTime: formatTime,
-  getImageData: getImageData
+  getImageInfo: getImageInfo,
+  getImageData:getImageData
 }

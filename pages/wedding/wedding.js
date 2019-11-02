@@ -1,4 +1,5 @@
-
+const util = require('../../utils/util.js')
+const imageData = require('my-data/my-data.js')
 Page({
 
   /**
@@ -25,7 +26,38 @@ Page({
    * @param slogans
    */
   getData: function(type, setKey, slogans) {
-
+    console.log(imageData)
+    let wedding = [];
+    for (let subject of imageData) {
+      let temp = {}
+      temp.title = subject.explain;
+      temp.coverageUrl = subject.coverageUrl;
+      wedding.push(temp);
+    }
+    this.setData({
+      [setKey]: {
+        slogan: slogans,
+        weddings: wedding
+      },
+      showOrHide: "visible"
+    });
+    // util.getImageData(res => {
+    //   console.log(res)
+    //   let wedding = [];
+    //   for (let subject of data.tolkData) {
+    //     let temp = {}
+    //     temp.title = subject.explain;
+    //     temp.coverageUrl = subject.coverageUrl;
+    //     wedding.push(temp);
+    //   }
+    //   this.setData({
+    //     [setKey]: {
+    //       slogan: slogans,
+    //       wedding: wedding
+    //     },
+    //     showOrHide: "visible"
+    //   });
+    // })
   },
   onMoreTap: function(e) {
 

@@ -3,14 +3,12 @@ Page({
   data: {},
   onLoad(options) {
     let that = this;
-    util.getImageData(that.precessImageData)
+    util.getImageInfo(that.precessImageData)
   },
   precessImageData(res) {
     let imageData = res.data[0]
     this.setData({
-      ["articleList"]: imageData.articleList
-    });
-    this.setData({
+      ["articleList"]: imageData.articleList,
       ["bannerList"]: imageData.bannerList
     });
   },

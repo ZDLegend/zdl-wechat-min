@@ -15,10 +15,12 @@
 }
 .slogan{
     font-style: 24rpx;
+    font-size:18px;
 }
 .more-text{
     margin-right: 10rpx;
     color: #1f4ba5;
+    font-size:15px;
 }
 .more-img{
     width: 9rpx;

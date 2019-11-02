@@ -5,7 +5,7 @@
                 <view class="wedding-head">
                 <text class="slogan">{{slogan}}</text>
                 <view class="more" catchtap='onMoreTap' data-categroy="{{slogan}}">
-                    <text class="more-text">更多</text>
+                    <text class="more-text">more</text>
                     <image class="more-img" src="/image/icon/arrow-right.png"></image>
                 </view>
             </view>    
