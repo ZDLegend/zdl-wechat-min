@@ -1,0 +1,9 @@
+/* pages/more-wedding/more-wedding.wxss */
+@import "../wed/wedding-template.wxss";
+.grid-container{
+
+}
+.single-grid-container{
+    float: left;
+    margin: 20rpx 0 20rpx 6rpx;
+}

@@ -4,6 +4,7 @@
     "pages/images/images",
     "pages/image-details/image-details",
     "pages/wedding/wedding",
+    "pages/wedding/more-wedding/more-wedding",
     "pages/logs/logs"
   ],
   "window": {

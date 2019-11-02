@@ -1,0 +1,9 @@
+<!--pages/more-wedding/more-wedding.wxml-->
+<import src="../wed/wedding-template.wxml" />
+<view class="grid-container">
+    <block wx:for="{{weddings}}" wx:for-item="wedding">
+        <view class="single-grid-container">
+            <template is="weddingTemplate" data="{{...wedding}}" />
+        </view>
+    </block>
+</view>

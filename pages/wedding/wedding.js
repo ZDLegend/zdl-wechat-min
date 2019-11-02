@@ -59,8 +59,13 @@ Page({
     //   });
     // })
   },
-  onMoreTap: function(e) {
 
+  //进入更多
+  onMoreTap: function(e) {
+    let categroy = e.currentTarget.dataset.categroy;
+    wx.navigateTo({
+      url: 'more-wedding/more-wedding?categroy=' + categroy,
+    })
   },
 
   /**
