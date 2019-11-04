@@ -1,9 +1,25 @@
 <!--pages/more-wedding/more-wedding.wxml-->
-<import src="../wed/wedding-template.wxml" />
-<view class="grid-container">
-    <block wx:for="{{weddings}}" wx:for-item="wedding">
-        <view class="single-grid-container">
-            <template is="weddingTemplate" data="{{...wedding}}" />
+<!--<view class="grid-container">-->
+<!--    <block wx:for="{{weddings}}" wx:for-item="wedding">-->
+<!--        <view class="wedding-container" catchtap="onweddingTap">-->
+<!--            <image class="wedding-img" src="{{wedding.coverageUrl}}" mode="aspectFit"></image>-->
+<!--            <text class="wedding-title">{{wedding.title}}</text>-->
+<!--        </view>-->
+<!--    </block>-->
+<!--</view>-->
+<!--pages/index/index.wxml-->
+<view class='more-container'>
+    <view class="con-wrap ripple {{cardRightIn?'flipInY':''}} {{cardLeftIn?'fadeInLeft':''}}"  wx:for="{{weddings}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}" >
+        <view class='card-box' bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
+            <image wx:if="{{item.coverageUrl}}" class="card-img" src="{{item.coverageUrl}}" mode="aspectFit"></image>
+            <view class='card-title'>{{item.title}}</view>
+            <view class="card-con-wrap">
+                <view class='card-con-right'>
+                    <view class='card-agree'  catchtouchend='toAgree' data-id='{{item._id}}'>
+                        <image src="../../../image/icon/agree-a.png" class="ripple rubberBand"></image>
+                    </view>
+                </view>
+            </view>
         </view>
-    </block>
+    </view>
 </view>
