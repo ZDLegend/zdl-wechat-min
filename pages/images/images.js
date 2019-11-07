@@ -41,6 +41,27 @@ Page({
       }
     }
   },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    this.setData({
+      bounceInRight: "ripple bounceInRight",
+      bounceInLeft: "ripple bounceInLeft",
+      bounceIn: "ripple bounceIn",
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    this.setData({
+      bounceInRight: "",
+      bounceInLeft: "",
+      bounceIn: "",
+    })
+  },
   likeThis(e) {
     let [that, index] = [
       this,

@@ -1,4 +1,5 @@
 /*fonts*/
+@import '../../../utils/ripples.min.wxss';
 @font-face {font-family: "iconfont";
     src: url('/fonts/iconfont.eot?t=1520834716225'); /* IE9*/
     src: url('/fonts/iconfont.eot?t=1520834716225#iefix') format('embedded-opentype'), /* IE6-IE8 */
