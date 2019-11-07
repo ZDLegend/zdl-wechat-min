@@ -6,7 +6,7 @@
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
       <block wx:else>
         <image bindtap="bindViewTap" class="userinfo-avatar {{musicClass}}" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        </block>
+      </block>
     </view>
   </view>
 </view>
