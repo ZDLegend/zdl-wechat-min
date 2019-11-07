@@ -2,6 +2,7 @@
 <import src="wedding-list/wedding-list-template.wxml" />
 <view style='visibility: {{showOrHide}}'>
     <view class="wed-container" wx-if="{{containerShow}}">
+        <image src="../../../image/title.jpg" class="title-image" mode="aspectFit"></image>
         <view class="wedding-template">
             <template is="weddingListTemplate" data="{{...tianshui}}" />
         </view>
