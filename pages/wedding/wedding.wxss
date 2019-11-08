@@ -1,4 +1,5 @@
 @import "wedding-list/wedding-list-template.wxss";
+@import '../../utils/ripples.min.wxss';
 .container{
     background: #f2f2f2;
 }
@@ -9,13 +10,21 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    background: #f2f2f2;
+    background: #FFF0F5;
 }
 
 .title-image{
     width: 100%;
+    height: 120px;
+    border-bottom: 4px dashed #ccc;
+}
+
+.list-image{
+    width: 100%;
+    height: 260px;
+    margin: 10rpx;
 }
 
 .wedding-template{
-    margin-bottom: 30rpx;
+    margin: 10rpx;
 }
