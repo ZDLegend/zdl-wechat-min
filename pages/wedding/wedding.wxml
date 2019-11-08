@@ -2,15 +2,9 @@
 <import src="wedding-list/wedding-list-template.wxml" />
 <view style='visibility: {{showOrHide}}'>
     <view class="wed-container" wx-if="{{containerShow}}">
-        <image src="../../../image/title.jpg" class="title-image" mode="aspectFit"></image>
-        <view class="wedding-template">
-            <template is="weddingListTemplate" data="{{...tianshui}}" />
-        </view>
-        <view class="wedding-template">
-            <template is="weddingListTemplate" data="{{...jiaxing}}" />
-        </view>
-        <view class="wedding-template">
-            <template is="weddingListTemplate" data="{{...wedding}}" />
-        </view>
+        <image src="https://pic4.zhimg.com/80/v2-f1474d798290f1fa738e733dd7b92ecb_hd.jpg" class="title-image {{bounceIn}}" mode="aspectFit"></image>
+        <image src="https://pic1.zhimg.com/80/v2-d6c1dbae5dca95acd25232c14bae6b64_hd.jpg" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{gansu}}" mode="aspectFit"></image>
+        <image src="https://pic1.zhimg.com/80/v2-411556c1e3d0f44b3689696e69527a40_hd.jpg" class="list-image {{bounceInRight}}" catchtap='onMoreTap' data-categroy="{{zhejiang}}" mode="aspectFit"></image>
+        <image src="https://pic3.zhimg.com/80/v2-2b517375e4631be26c8b25bf19b9e2d2_hd.jpg" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{wed}}" mode="aspectFit"></image>
     </view>
 </view>

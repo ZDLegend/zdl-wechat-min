@@ -8,6 +8,9 @@ Page({
   data: {
     containerShow: true,
     closeImgShow: false,
+    gansu:"9月28日 甘肃天水",
+    zhejiang:"10月4日 浙江嘉兴",
+    wed:"婚纱照",
     showOrHide: "hidden"
   },
 
@@ -79,14 +82,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      bounceInRight: "ripple bounceInRight",
+      bounceInLeft: "ripple bounceInLeft",
+      bounceIn: "ripple swing",
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    this.setData({
+      bounceInRight: "",
+      bounceInLeft: "",
+      bounceIn: "",
+    })
   },
 
   /**
