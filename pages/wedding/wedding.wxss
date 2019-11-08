@@ -3,6 +3,7 @@
 .container{
     background: #f2f2f2;
 }
+
 .wed-container {
     height: 100%;
     display: flex;
