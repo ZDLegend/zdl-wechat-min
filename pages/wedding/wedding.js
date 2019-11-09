@@ -29,7 +29,6 @@ Page({
    * @param slogans
    */
   getData: function(type, setKey, slogans) {
-    console.log(imageData)
     let wedding = [];
     for (let subject of imageData) {
       let temp = {}
