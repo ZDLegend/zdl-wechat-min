@@ -62,6 +62,7 @@ Page({
       bounceIn: "",
     })
   },
+
   likeThis(e) {
     let [that, index] = [
       this,

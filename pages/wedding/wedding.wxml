@@ -1,10 +1,9 @@
 <!--pages/slide/wedding.wxml-->
 <import src="wedding-list/wedding-list-template.wxml" />
-<view style='visibility: {{showOrHide}}'>
-    <view class="wed-container" wx-if="{{containerShow}}">
-        <image src="https://pic1.zhimg.com/v2-ae4bb50457a4908130e780e02bdcf938_r.jpg" class="title-image {{bounceIn}}" mode="aspectFit"></image>
-        <image src="https://pic3.zhimg.com/80/v2-39e403095b9b047a6f5aeb243910c0ba_hd.jpg" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{gansu}}" mode="aspectFit"></image>
-        <image src="https://pic2.zhimg.com/80/v2-8471d82ae88cff2c485b45f46e9a79a9_hd.jpg" class="list-image {{bounceInRight}}" catchtap='onMoreTap' data-categroy="{{zhejiang}}" mode="aspectFit"></image>
-        <image src="https://pic4.zhimg.com/80/v2-5cd4e384dc3994b870d941fa0bd38067_hd.jpg" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{wed}}" mode="aspectFit"></image>
-    </view>
+<view class="wed-container">
+    <image src="{{titleImage}}" class="title-image {{bounceIn}}" mode="aspectFit"></image>
+    <image src="{{ganshuImage}}" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{gansu}}" mode="aspectFit"></image>
+    <image src="{{jiaxinImage}}" class="list-image {{bounceInRight}}" catchtap='onMoreTap' data-categroy="{{zhejiang}}" mode="aspectFit"></image>
+    <image src="{{wedImage}}" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{wed}}" mode="aspectFit"></image>
 </view>
+
