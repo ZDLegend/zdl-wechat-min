@@ -8,5 +8,13 @@
         <image bindtap="bindViewTap" class="userinfo-avatar {{musicClass}}" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       </block>
     </view>
+    <view class="text-container">
+      <view class="text-want">我想了想</view>
+      <view class="text-want">还是想用</view>
+      <view class="text-want">自己的方式</view>
+      <view class="text-want">纪念自己的爱情</view>
+      <view class="text-want">于是这个小程序</view>
+      <view class="text-want">诞生了</view>
+    </view>
   </view>
 </view>
