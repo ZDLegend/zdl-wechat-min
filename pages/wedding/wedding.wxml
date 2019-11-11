@@ -1,9 +1,6 @@
-<!--pages/slide/wedding.wxml-->
-<import src="wedding-list/wedding-list-template.wxml" />
 <view class="wed-container">
     <image src="{{titleImage}}" class="title-image {{bounceIn}}" mode="aspectFit"></image>
     <image src="{{ganshuImage}}" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{gansu}}" mode="aspectFit"></image>
     <image src="{{jiaxinImage}}" class="list-image {{bounceInRight}}" catchtap='onMoreTap' data-categroy="{{zhejiang}}" mode="aspectFit"></image>
     <image src="{{wedImage}}" class="list-image {{bounceInLeft}}" catchtap='onMoreTap' data-categroy="{{wed}}" mode="aspectFit"></image>
 </view>
-
