@@ -3,12 +3,20 @@ const musicUtil = require('../../utils/music-util.js')
 const app = getApp()
 Page({
   data: {
-    motto: 'welcome to my board',
     userInfo: {},
     hasUserInfo: false,
     music:'https://7a64-zdlegend-o1ov1-1300454709.tcb.qcloud.la/music/%E5%91%A8%E6%9D%B0%E4%BC%A6%20-%20%E5%8F%AFai%E5%A5%B3%E4%BA%BA.mp3?sign=578811e1b0a5e72fa772e220451f7631&t=1572402672',
     musicClass:'music-on',
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    currentIndex: 0,
+    oldIndex: 0,
+    view: [{
+      in: "",
+      out: ""
+    }, {
+      in: "",
+      out: ""
+    }]
   },
   //音乐启停函数
   bindViewTap: function() {
@@ -23,6 +31,55 @@ Page({
     this.setData({
       musicClass: ''
     })
+  },
+  touchStart: function (t) {
+    this.setData({
+      startX: t.changedTouches[0].clientX
+    })
+  },
+  touchEnd: function (t) {
+    let e = this, n = this.data.view;
+
+    this.setData({
+      endX: t.changedTouches[0].clientX
+    });
+
+    let a = t.changedTouches[0].clientX - this.data.startX;
+    if (a < -100) {
+      //右滑
+      if (this.data.currentIndex >= 1) return;
+      this.setData({
+        oldIndex: e.data.currentIndex,
+        currentIndex: ++e.data.currentIndex
+      });
+
+      n[this.data.oldIndex].out = "ripple fadeOutLeft";
+      n[this.data.oldIndex].in = "";
+      n[this.data.currentIndex].in = "ripple fadeInRight";
+      n[this.data.currentIndex].out = "";
+
+      this.setData({
+        view: n
+      })
+      // this.cleanAnimated(),
+      // this.showAnimated()
+    } else if (a > 100) {
+      //左滑
+      if (this.data.currentIndex <= 0) return;
+      this.setData({
+        oldIndex: e.data.currentIndex,
+        currentIndex: --e.data.currentIndex
+      });
+      n[this.data.oldIndex].out = "ripple fadeOutRight";
+      n[this.data.oldIndex].in = "";
+      n[this.data.currentIndex].in = "ripple fadeInLeft";
+      n[this.data.currentIndex].out = "";
+      this.setData({
+        view: n
+      })
+      // this.cleanAnimated(),
+      // this.showAnimated()
+    }
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -51,7 +108,7 @@ Page({
         }
       })
     }
-    musicUtil.initMusic(this.data.music)
+    //musicUtil.initMusic(this.data.music)
   },
   /**
    * 生命周期函数--监听页面显示
