@@ -35,19 +35,19 @@ Page({
   },
   touchStart: function (t) {
     this.setData({
-      startX: t.changedTouches[0].clientX
+      startY: t.changedTouches[0].clientY
     })
   },
   touchEnd: function (t) {
     let e = this, n = this.data.view;
 
     this.setData({
-      endX: t.changedTouches[0].clientX
+      endY: t.changedTouches[0].clientY
     });
 
-    let a = t.changedTouches[0].clientX - this.data.startX;
-    if (a < -100) {
-      //右滑
+    let a = t.changedTouches[0].clientY - this.data.startY;
+    if (a < -50) {
+      //下滑
       if (this.data.currentIndex >= 1) return;
       this.setData({
         showOrHide: "visible",
@@ -55,9 +55,9 @@ Page({
         currentIndex: ++e.data.currentIndex
       });
 
-      n[this.data.oldIndex].out = "ripple fadeOutLeft";
+      n[this.data.oldIndex].out = "ripple fadeOutUp";
       n[this.data.oldIndex].in = "";
-      n[this.data.currentIndex].in = "ripple fadeInRight";
+      n[this.data.currentIndex].in = "ripple fadeInUp";
       n[this.data.currentIndex].out = "";
 
       this.setData({
@@ -65,7 +65,7 @@ Page({
       })
       // this.cleanAnimated(),
       // this.showAnimated()
-    } else if (a > 100) {
+    } else if (a > 50) {
       //左滑
       if (this.data.currentIndex <= 0) return;
       this.setData({
@@ -73,9 +73,9 @@ Page({
         oldIndex: e.data.currentIndex,
         currentIndex: --e.data.currentIndex
       });
-      n[this.data.oldIndex].out = "ripple fadeOutRight";
+      n[this.data.oldIndex].out = "ripple fadeOutDown";
       n[this.data.oldIndex].in = "";
-      n[this.data.currentIndex].in = "ripple fadeInLeft";
+      n[this.data.currentIndex].in = "ripple fadeInDown";
       n[this.data.currentIndex].out = "";
       this.setData({
         view: n

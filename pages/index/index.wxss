@@ -28,19 +28,25 @@
   width:100%;
 }
 
-.text{
-  margin: 950rpx 0rpx;
+.text-two{
+  margin: 1170rpx 0rpx;
   position:absolute;
-  font-size:24rpx;
-  font-weight:700;
+}
+
+.text{
+  margin: 1070rpx 0rpx;
+  position:absolute;
 }
 
 .text-want{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:rgb(252, 170, 188);
+  background:white;
   opacity:0.8;
+  font-size:34rpx;
+  font-weight:700;
+  color: rgb(252, 170, 188);
 }
 
 .music {
