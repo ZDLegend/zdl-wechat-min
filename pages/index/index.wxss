@@ -40,6 +40,7 @@
   align-items:center;
   justify-content:center;
   background:rgb(252, 170, 188);
+  opacity:0.8;
 }
 
 .music {
