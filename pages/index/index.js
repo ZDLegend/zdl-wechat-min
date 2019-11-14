@@ -20,7 +20,7 @@ Page({
     }]
   },
   //音乐启停函数
-  bindViewTap: function() {
+  musicEnable: function() {
     musicUtil.switchByData(this.musicOn, this.musicStop)
   },
   musicOn: function () {

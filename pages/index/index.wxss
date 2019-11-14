@@ -34,7 +34,7 @@
 }
 
 .text{
-  margin: 1070rpx 0rpx;
+  margin: 1010rpx 0rpx;
   position:absolute;
 }
 
@@ -42,11 +42,18 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  background:white;
-  opacity:0.8;
   font-size:34rpx;
   font-weight:700;
+  background:white;
+  opacity:0.7;
   color: rgb(252, 170, 188);
+}
+
+.arrow {
+  width: 50rpx;
+  height: 50rpx;
+  align-items:center;
+  justify-content:center;
 }
 
 .music {
@@ -69,4 +76,13 @@
   100% {
     transform: rotateZ(360deg);
   }
+}
+
+/* 漂浮动画 */
+@keyframes float{
+  from{transform:translate(0,0)}
+  to{transform:translate(0,6px)}
+}
+.float{
+    animation: float 1.3s ease-in-out 2.7s infinite alternate;
 }
