@@ -45,7 +45,7 @@
   font-size:34rpx;
   font-weight:700;
   background:white;
-  opacity:0.7;
+  opacity:0.5;
   color: rgb(252, 170, 188);
 }
 
