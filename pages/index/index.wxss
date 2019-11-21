@@ -34,7 +34,7 @@
 }
 
 .text{
-  margin: 800rpx 0rpx;
+  margin: 900rpx 0rpx;
   position:absolute;
 }
 
@@ -52,8 +52,7 @@
 .arrow {
   width: 50rpx;
   height: 50rpx;
-  align-items:center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .music {
