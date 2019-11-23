@@ -47,11 +47,11 @@
   font-weight:700;
   background:white;
   opacity:0.5;
-  color: rgb(252, 170, 188);
+  color: #600030;
 }
 
 .index-image-1{
-    margin: 700rpx 50rpx;
+    margin: 600rpx 50rpx;
     width: 400rpx;
     height: 400rpx;
     border:solid 1px white;
@@ -59,7 +59,7 @@
 }
 
 .index-image-2{
-    margin: 550rpx 250rpx;
+    margin: 450rpx 250rpx;
     width: 300rpx;
     height: 300rpx;
     border:solid 1px white;
@@ -67,7 +67,7 @@
 }
 
 .index-image-3{
-    margin: 250rpx -200rpx;
+    margin: 150rpx -200rpx;
     width: 500rpx;
     height: 500rpx;
     border:solid 1px white;
