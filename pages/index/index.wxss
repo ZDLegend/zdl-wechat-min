@@ -12,6 +12,7 @@
   height: 128rpx;
   margin: 130rpx;
   border-radius: 50%;
+  z-index: 99;
 }
 
 .usermotto {
@@ -47,6 +48,30 @@
   background:white;
   opacity:0.5;
   color: rgb(252, 170, 188);
+}
+
+.index-image-1{
+    margin: 700rpx 50rpx;
+    width: 400rpx;
+    height: 400rpx;
+    border:solid 1px white;
+    position:absolute;
+}
+
+.index-image-2{
+    margin: 550rpx 250rpx;
+    width: 300rpx;
+    height: 300rpx;
+    border:solid 1px white;
+    position:absolute;
+}
+
+.index-image-3{
+    margin: 250rpx -200rpx;
+    width: 500rpx;
+    height: 500rpx;
+    border:solid 1px white;
+    position:absolute;
 }
 
 .arrow {

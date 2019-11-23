@@ -11,6 +11,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     currentIndex: 0,
     oldIndex: 0,
+    hinge:"",
     view: [{
       in: "",
       out: ""
@@ -82,6 +83,10 @@ Page({
       })
       // this.cleanAnimated(),
       // this.showAnimated()
+    } else {
+      this.setData({
+        hinge:"ripple hinge"
+      });
     }
   },
   onLoad: function () {

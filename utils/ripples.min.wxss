@@ -23,6 +23,9 @@
 .ripple.hinge {
 	animation-duration:2s
 }
+.ripple.hinge2 {
+	animation-duration:5s
+}
 .ripple.bounceIn,.ripple.bounceOut,.ripple.flipOutX,.ripple.flipOutY {
 	animation-duration:.75s
 }
@@ -940,8 +943,8 @@
         animation-timing-function:ease-in-out;
         opacity:1
     }to {
-         transform:rotate(45deg);
-         transform-origin:top left;
+		transform:translate3d(0,1400rpx,0);
+		 opacity:0
      }
 }.hinge2 {
       animation-name:hinge2
