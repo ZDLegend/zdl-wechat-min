@@ -30,19 +30,19 @@ Page({
    * @param slogans
    */
   getData: function(type, setKey, slogans) {
-    let wedding = [];
-    for (let subject of imageData) {
-      let temp = {}
-      temp.title = subject.explain;
-      temp.coverageUrl = subject.coverageUrl;
-      wedding.push(temp);
-    }
-    this.setData({
-      [setKey]: {
-        slogan: slogans,
-        weddings: wedding
-      },
-    });
+    // let wedding = [];
+    // for (let subject of imageData) {
+    //   let temp = {}
+    //   temp.title = subject.explain;
+    //   temp.coverageUrl = subject.coverageUrl;
+    //   wedding.push(temp);
+    // }
+    // this.setData({
+    //   [setKey]: {
+    //     slogan: slogans,
+    //     weddings: wedding
+    //   },
+    // });
     // util.getImageData(res => {
     //   console.log(res)
     //   let wedding = [];

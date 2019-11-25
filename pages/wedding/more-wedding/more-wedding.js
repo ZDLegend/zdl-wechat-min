@@ -23,13 +23,13 @@ Page({
     let interfaceUrl = null;
     switch (categroy) {
       case "9月28日 甘肃天水":
-        this.getData(imageData)
+        this.getData(imageData.tianshui)
         break;
       case "10月4日 浙江嘉兴":
-        this.getData(imageData)
+        this.getData(imageData.jiaxin)
         break;
       default:
-        this.getData(imageData)
+        this.getData(imageData.wedding)
     }
     // 保存当前页面的数据请求地址，方便其他函数使用
     this.data.requestUrl = interfaceUrl;
