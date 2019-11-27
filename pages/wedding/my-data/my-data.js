@@ -34,20 +34,44 @@ let imageData = {
   "jiaxin":[
     {
       "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
-      "coverageUrl": "https://pic2.zhimg.com/80/v2-1a924775e501cdb22db503813bdcf111_hd.jpg",
-      "explain": "测试图片",
+      "coverageUrl": "https://pic4.zhimg.com/v2-34075d0b3693d45a0d06044215ec9f37_r.jpg",
+      "explain": "来看看新郎伴郎啦",
       "type": 2
     },
     {
       "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
-      "coverageUrl": "https://pic4.zhimg.com/80/v2-1f36cc3e3907115de3d3ad2b45e7b1e3_hd.jpg",
-      "explain": "测试图片2",
+      "coverageUrl": "https://pic2.zhimg.com/v2-6010c23679432bc6da194def96b577e5_r.jpg",
+      "explain": "新娘和她的朋友们",
       "type": 2
     },
     {
       "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
-      "coverageUrl": "https://pic3.zhimg.com/80/v2-62ba45a7e9c13bae6988ebe5711f7106_hd.jpg",
-      "explain": "测试图片3",
+      "coverageUrl": "https://pic3.zhimg.com/v2-31675bfd9055e9483007298bc6bc800a_r.jpg",
+      "explain": "拍的很尴尬啊",
+      "type": 2
+    },
+    {
+      "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
+      "coverageUrl": "https://pic3.zhimg.com/v2-4fc673233347a371eb498343a183fd62_r.jpg",
+      "explain": "哈哈哈哈哈哈",
+      "type": 2
+    },
+    {
+      "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
+      "coverageUrl": "https://pic4.zhimg.com/v2-fa06e5927cc317d11603b76327e8b903_r.jpg",
+      "explain": "婚礼最经典的流程",
+      "type": 2
+    },
+    {
+      "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
+      "coverageUrl": "https://pic4.zhimg.com/v2-c6f4a4726d566596533b7b6e542c5267_r.jpg",
+      "explain": "T台上的我们",
+      "type": 2
+    },
+    {
+      "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
+      "coverageUrl": "https://pic2.zhimg.com/v2-bda5a8b4ae19603e6227804c059ff5e5_r.jpg",
+      "explain": "感谢我的发小们和大学室友来参加我的婚礼，虽然上图这帮狗是临时决定的（这里有狗头）",
       "type": 2
     }
   ],
@@ -85,7 +109,7 @@ let imageData = {
     {
       "_id": "7d016cea-d5b4-4dc4-bf08-6e70fe8ba05c",
       "coverageUrl": "https://pic4.zhimg.com/v2-b29a27f4fd74acedce473e2eeb3a0abf_r.jpg",
-      "explain": "在母校建行楼走廊，我们毕业于用一所大学，算是一种小幸运吧",
+      "explain": "在母校建行楼走廊，我们毕业于同一所大学，算是一种小幸运吧",
       "type": 3
     },
     {
