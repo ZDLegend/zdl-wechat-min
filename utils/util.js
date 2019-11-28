@@ -6,12 +6,17 @@ function getImageInfo(callBack) {
   })
 }
 
-function getImageData(callBack) {
-  wx.cloud.database().collection('image_data').get({
-    success: function (res) {
-      callBack(res)
-    }
-  })
+function getImageData(type, callBack) {
+  wx.cloud.database()
+      .collection('image_data')
+      .where({
+        type: type
+      })
+      .get({
+        success: function (res) {
+          callBack(res.data)
+        }
+      })
 }
 
 function http(url, callBack) {
