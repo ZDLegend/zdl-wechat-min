@@ -20,7 +20,6 @@ function getImageData(type, callBack) {
 }
 
 function http(url, callBack) {
-  let that = this;
   wx.request({
     url: url,
     header: { "Content-Type": "json" },
