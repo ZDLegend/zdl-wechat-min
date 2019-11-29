@@ -1,5 +1,3 @@
-const util = require('../../utils/util.js')
-const imageData = require('my-data/my-data.js')
 Page({
 
   /**

@@ -1,13 +1,3 @@
-<!--pages/more-wedding/more-wedding.wxml-->
-<!--<view class="grid-container">-->
-<!--    <block wx:for="{{weddings}}" wx:for-item="wedding">-->
-<!--        <view class="wedding-container" catchtap="onweddingTap">-->
-<!--            <image class="wedding-img" src="{{wedding.coverageUrl}}" mode="aspectFit"></image>-->
-<!--            <text class="wedding-title">{{wedding.title}}</text>-->
-<!--        </view>-->
-<!--    </block>-->
-<!--</view>-->
-<!--pages/index/index.wxml-->
 <scroll-view scroll-y="true" style="width: 100%; height: 100%; background:rgb(252, 170, 188);">
     <view class="con-wrap ripple {{cardRightIn?'fadeInRight':''}} {{cardLeftIn?'fadeInLeft':''}}"  wx:for="{{weddings}}" wx:if="{{index==currentIndex}}" wx:key="{{item._id}}" >
         <view class='card-box' bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">

@@ -1,4 +1,4 @@
-@import "my-article-template/my-article-template.wxss";
+@import '../../utils/ripples.min.wxss';
 .img{
  width: 100%;
 }
@@ -9,4 +9,80 @@ swiper{
 swiper image{
     width: 100%;
     height: 100%;
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-msnui-love:before { content: "\e629"; }
+.icon-v1:before { content: "\e7bf"; }
+.icon-v2:before { content: "\e7c0"; }
+.icon-v3:before { content: "\e7c1"; }
+.icon-v4:before { content: "\e7c2"; }
+.icon-v5:before { content: "\e7c3"; }
+.icon-v6:before { content: "\e7c4"; }
+.icon-liulan:before { content: "\e640"; }
+/*fonts*/
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    border-top: 1px dashed #ccc;
+}
+.author-data{
+    width: 100%;
+    height: 80rpx;
+    flex-direction: row;
+}
+.avatar {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 12rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.nickname {
+    font-size: 26rpx;
+    margin-left: 12rpx;
+    vertical-align: middle;
+}
+.thumbnail {
+    width: 100%;
+}
+.introduce {
+    padding: 0 10rpx;
+    margin: 10px 0 5px;
+    font-size: 24rpx;
+    line-height: 38rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-indent: 50rpx;
+}
+.operate {
+    height: 40rpx;
+    margin-bottom: 2px;
+    line-height: 40rpx;
+    color: #aaa;
+}
+.level,
+.operate-icon {
+    margin: 0 6px;
+}
+.level {
+    color: orange;
+}
+.perate-count {
+    font-size: 26rpx;
+    vertical-align: 2rpx;
+}
+.create-date {
+    float: right;
+    margin-right: 6px;
 }
