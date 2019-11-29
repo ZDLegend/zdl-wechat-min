@@ -35,7 +35,7 @@
 }
 
 .text{
-  margin: 900rpx 0rpx;
+  margin: 950rpx 0rpx;
   position:absolute;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .index-image-1{
-    margin: 600rpx 50rpx;
+    margin: 600rpx -100rpx;
     width: 400rpx;
     height: 400rpx;
     border:solid 1px white;
@@ -67,9 +67,17 @@
 }
 
 .index-image-3{
-    margin: 150rpx -200rpx;
-    width: 500rpx;
-    height: 500rpx;
+     margin: 150rpx -200rpx;
+     width: 450rpx;
+     height: 450rpx;
+     border:solid 1px white;
+     position:absolute;
+ }
+
+.index-image-4{
+    margin: 100rpx 150rpx;
+    width: 350rpx;
+    height: 350rpx;
     border:solid 1px white;
     position:absolute;
 }

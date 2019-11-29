@@ -4,8 +4,7 @@
     "pages/images/images",
     "pages/image-details/image-details",
     "pages/wedding/wedding",
-    "pages/wedding/more-wedding/more-wedding",
-    "pages/logs/logs"
+    "pages/wedding/more-wedding/more-wedding"
   ],
   "window": {
     "backgroundTextStyle": "light",
