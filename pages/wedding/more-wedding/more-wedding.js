@@ -60,7 +60,7 @@ Page({
     wx.hideNavigationBarLoading();
   },
 
-  toAgree:function(e){
+  toAgree: function(e){
     let id = e.currentTarget.dataset.id;
     let list = this.data.weddings
     for(let i of list){
