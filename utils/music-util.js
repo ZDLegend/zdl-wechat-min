@@ -40,7 +40,6 @@ const switchByData = (musicOn, musicStop) => {
         data.audioStatus = 0;
         data.audioCtx.pause();
         musicStop();
-
     }
     // 如果是停止就播放
     else {

@@ -22,7 +22,13 @@ Page({
   },
   //音乐启停函数
   musicEnable: function() {
-    musicUtil.switchByData(this.musicOn, this.musicStop)
+    //如果是当前歌曲，则直接调用开关接口。如果不是，则刷新播放器
+    if (musicUtil.isConcurrent(this.data.music)) {
+      musicUtil.switchByData(this.musicOn, this.musicStop)
+    } else {
+      musicUtil.initMusic(this.data.music)
+      this.musicOn()
+    }
   },
   musicOn: function () {
     this.setData({
