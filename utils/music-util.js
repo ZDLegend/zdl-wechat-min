@@ -52,18 +52,18 @@ const switchByData = (musicOn, musicStop) => {
 //查看当前播放是否同一个音乐
 const isConcurrent = src => {
     return data.src === src
-}
+};
 
 //查看当前播放状态
 const isPlay = () => {
     return data.audioStatus
-}
+};
 
 // 写在组件的methods中：
 
 // 在引用组件页面的onShow()中调用
 // 否则，如果当发生分享页面行为并返回时，音乐不会自动播放
-const onShow = function () {
+const onShow = () => {
     if (data.audioStatus) {
         data.audioCtx.play()
     }
@@ -71,7 +71,7 @@ const onShow = function () {
 
 // 在引用组件页面的onHide()中调用
 // 使在跳转到下一个页面后，音乐停止
-const onHide = function () {
+const onHide = () => {
     if (data.audioStatus) {
         data.audioCtx.pause()
     }

@@ -40,12 +40,12 @@ Page({
     })
   },
 
-  getImage(type) {
+  getImage: function (type) {
     let that = this;
     utils.getImageData(type, that.getData)
   },
 
-  getData(data){
+  getData: function (data){
     let wedding = [];
     for (let subject of data) {
       let temp = {}

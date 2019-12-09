@@ -1,18 +1,18 @@
 const util = require('../../utils/util.js')
 Page({
   data: {},
-  onLoad(options) {
+  onLoad: function (options) {
     let that = this;
     util.getImageInfo(that.precessImageData)
   },
-  precessImageData(res) {
+  precessImageData: function (res) {
     let imageData = res.data[0]
     this.setData({
       ["articleList"]: imageData.articleList,
       ["bannerList"]: imageData.bannerList
     });
   },
-  onShareAppMessage() {
+  onShareAppMessage: function () {
     return {
       title: "你出现在我诗的每一页",
       path: '/pages/index/index',
@@ -63,7 +63,7 @@ Page({
     })
   },
 
-  likeThis(e) {
+  likeThis: function (e) {
     let [that, index] = [
       this,
       --e.target.dataset.id
@@ -84,7 +84,7 @@ Page({
       })
     }
   },
-  details(e) {
+  details: function (e) {
     let aid = e.currentTarget.dataset.aid;
     wx.navigateTo({
       url: "../image-details/image-details?aid=" + aid

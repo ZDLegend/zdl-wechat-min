@@ -5,13 +5,13 @@ wx.cloud.database().collection('image_info').get({
         details = res.data[0]
     }
 })
-let app = getApp();
+
 Page({
     data: {
         articles: {},
         isPlaying: false
     },
-    onLoad(options) {
+    onLoad: function (options) {
         let that = this;
         let aid = options.aid;
         this.setData({
@@ -31,7 +31,7 @@ Page({
             })
         }
     },
-    collect(event) {
+    collect: function (event) {
         let id = event.currentTarget.dataset.id;
         if (this.data.col) {
             this.setData({
@@ -53,7 +53,7 @@ Page({
             })
         }
     },
-    share() {
+    share: function () {
         wx.showActionSheet({
             itemList: [
                 "分享到QQ",
@@ -98,7 +98,7 @@ Page({
             }
         })
     },
-    onMusic(event) {
+    onMusic: function (event) {
         let that = this;
         //如果是当前歌曲，则直接调用开关接口。如果不是，则刷新播放器
         if (musicUtil.isConcurrent(that.data.articles.music.dataUrl)) {
