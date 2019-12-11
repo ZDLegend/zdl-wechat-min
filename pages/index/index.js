@@ -143,7 +143,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    let that = this;
     let shareObj = {
       title: "看星星一颗两颗三颗四颗连成线",
       path: '/pages/index/index',
@@ -154,8 +153,16 @@ Page({
         // 转发失败之后的回调
         if (res.errMsg == 'shareAppMessage:fail cancel') {
           // 用户取消转发
+            wx.showToast({
+                title: "小屁孩，为什么取消了",
+                icon: "none"
+            })
         } else if (res.errMsg == 'shareAppMessage:fail') {
           // 转发失败，其中  为详细失败信息
+            wx.showToast({
+                title: "哎呀，失败了",
+                icon: "none"
+            })
         }
       },
       complete() {
