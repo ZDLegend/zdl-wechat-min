@@ -6,7 +6,7 @@
             <view class="card-con-wrap">
                 <view class='card-con-right'>
                     <view class='card-agree'  catchtouchend='toAgree' data-id='{{item._id}}'>
-                        <image src="../../../image/icon/agree-a.png" class="ripple infinite rubberBand"></image>
+                        <image src="../../../image/icon/love.png" class="ripple infinite rubberBand"></image>
                     </view>
                 </view>
             </view>
