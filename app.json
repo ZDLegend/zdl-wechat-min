@@ -8,9 +8,9 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#2c2e3b",
+    "navigationBarBackgroundColor": "#F8F8FF",
     "navigationBarTitleText": "黯爽夫妇",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "requiredBackgroundModes": [
     "audio",
@@ -22,25 +22,25 @@
     "color": "#fff",
     "selectedColor": "#87ceeb",
     "borderStyle": "black",
-    "backgroundColor": "#2c2e3b",
+    "backgroundColor": "#F8F8FF",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "",
-        "iconPath": "image/tab/type.png",
-        "selectedIconPath": "image/tab/type-active.png"
+        "iconPath": "image/tab/house136.png",
+        "selectedIconPath": "image/tab/house135.png"
       },
       {
         "pagePath": "pages/images/images",
         "text": "",
-        "iconPath": "image/tab/yuedu.png",
-        "selectedIconPath": "image/tab/yuedu_hl.png"
+        "iconPath": "image/tab/cloud114.png",
+        "selectedIconPath": "image/tab/cloud113.png"
       },
       {
         "pagePath": "pages/wedding/wedding",
         "text": "",
-        "iconPath": "image/tab/ciwei.png",
-        "selectedIconPath": "image/tab/ciwei_hl.png"
+        "iconPath": "image/tab/heart113.png",
+        "selectedIconPath": "image/tab/heart110.png"
       }
     ]
   }
