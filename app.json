@@ -10,6 +10,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F8F8FF",
     "navigationBarTitleText": "黯爽夫妇",
+    "navigationStyle": "default",
     "navigationBarTextStyle": "black"
   },
   "requiredBackgroundModes": [
