@@ -10,8 +10,16 @@
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 130rpx;
+  top:15%;
   border-radius: 50%;
+  z-index: 99;
+  position:absolute;
+}
+
+.userinfo-get {
+    top:15%;
+    z-index: 99;
+    position:absolute;
 }
 
 .usermotto {
@@ -34,7 +42,7 @@
 }
 
 .text{
-  margin: 1010rpx 0rpx;
+  bottom:-70%;
   position:absolute;
 }
 
@@ -45,15 +53,46 @@
   font-size:34rpx;
   font-weight:700;
   background:white;
-  opacity:0.7;
-  color: rgb(252, 170, 188);
+  opacity:0.5;
+  color: #600030;
+}
+
+.index-image-1{
+    margin: 600rpx -100rpx;
+    width: 400rpx;
+    height: 400rpx;
+    border:solid 1px white;
+    position:absolute;
+}
+
+.index-image-2{
+    margin: 450rpx 250rpx;
+    width: 300rpx;
+    height: 300rpx;
+    border:solid 1px white;
+    position:absolute;
+}
+
+.index-image-3{
+     margin: 150rpx -200rpx;
+     width: 450rpx;
+     height: 450rpx;
+     border:solid 1px white;
+     position:absolute;
+ }
+
+.index-image-4{
+    margin: 100rpx 150rpx;
+    width: 350rpx;
+    height: 350rpx;
+    border:solid 1px white;
+    position:absolute;
 }
 
 .arrow {
   width: 50rpx;
   height: 50rpx;
-  align-items:center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .music {

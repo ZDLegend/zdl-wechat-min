@@ -1,4 +1,4 @@
-<swiper indicator-dots="true" autoplay="true" class="{{bounceIn}}">
+<swiper indicator-dots="true" autoplay="true" circular="true" class="{{bounceIn}}">
     <swiper-item wx:for="{{bannerList}}">
         <image class="img" src="{{item}}" mode='aspectFill'></image>
     </swiper-item>

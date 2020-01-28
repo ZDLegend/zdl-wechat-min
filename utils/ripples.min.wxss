@@ -23,6 +23,9 @@
 .ripple.hinge {
 	animation-duration:2s
 }
+.ripple.hinge2 {
+	animation-duration:5s
+}
 .ripple.bounceIn,.ripple.bounceOut,.ripple.flipOutX,.ripple.flipOutY {
 	animation-duration:.75s
 }
@@ -922,6 +925,31 @@
 }.hinge {
 	animation-name:hinge
 }
+
+@keyframes hinge2
+{
+    0% {
+        transform-origin:top left;
+        animation-timing-function:ease-in-out
+    }
+    20%,60% {
+        transform:rotate(80deg);
+        transform-origin:top left;
+        animation-timing-function:ease-in-out
+    }
+    40%,80% {
+        transform:rotate(60deg);
+        transform-origin:top left;
+        animation-timing-function:ease-in-out;
+        opacity:1
+    }to {
+		transform:translate3d(0,1400rpx,0);
+		 opacity:0
+     }
+}.hinge2 {
+      animation-name:hinge2
+  }
+
 @keyframes rollIn {
 	0% {
 		opacity:0;

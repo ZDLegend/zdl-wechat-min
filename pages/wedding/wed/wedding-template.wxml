@@ -1,7 +1,0 @@
-<import src="../stars/stars-template.wxml" />
-<template name="weddingTemplate">
-    <view class="wedding-container" catchtap="onweddingTap">
-        <image class="wedding-img" src="{{coverageUrl}}" mode="aspectFit"></image>
-        <text class="wedding-title">{{title}}</text>
-    </view>
-</template>
